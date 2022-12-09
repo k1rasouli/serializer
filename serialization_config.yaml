@@ -1,0 +1,11 @@
+App\Models\User:
+  attributes:
+    full_name:
+      field_name: 'name'
+      rules: ['required', 'bigint']
+      skip_on_rule_fail: true
+    user_email:
+      field_name: 'email'
+      rules: ['required', 'email']
+      skip_on_rule_fail: true
+
