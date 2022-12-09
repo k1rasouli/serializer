@@ -1,11 +1,11 @@
-App\Models\User:
+App\Models\Employee:
   attributes:
-    full_name:
-      field_name: 'name'
-      rules: ['required', 'bigint']
+    firstName:
+      field_name: 'first_name'
+      rules: ['required']
       skip_on_rule_fail: true
-    user_email:
-      field_name: 'email'
-      rules: ['required', 'email']
+    lastName:
+      field_name: 'last_name'
+      rules: ['required']
       skip_on_rule_fail: true
 

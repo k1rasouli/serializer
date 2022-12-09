@@ -9,6 +9,7 @@ class HomeController extends Controller
     public function index()
     {
         //return (new Config())->loadModelConfiguration(get_class(new User()));
-        return "There There";
+        //return (array) simplexml_load_file('https://xml.eduvation.ir');
+        //return "There There";
     }
 }
