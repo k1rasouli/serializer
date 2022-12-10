@@ -1,11 +1,16 @@
+## This file is designed in a way to add new models and extensions
+## Model name Should be in full address like: App\Models\Employee:
+## New extensions can be added under attributes
 App\Models\Employee:
   attributes:
-    firstName:
-      field_name: 'first_name'
-      rules: ['required']
-      skip_on_rule_fail: true
-    lastName:
-      field_name: 'last_name'
-      rules: ['required']
-      skip_on_rule_fail: true
+    json:
+      theName:
+        field_name: 'first_name'
+      theFamily:
+        field_name: 'last_name'
+    xml:
+      firstName:
+        field_name: 'first_name'
+      lastName:
+        field_name: 'last_name'
 

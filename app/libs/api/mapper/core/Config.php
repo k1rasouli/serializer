@@ -1,12 +1,12 @@
 <?php
 
-namespace App\libs\api\mapper;
+namespace App\libs\api\mapper\core;
 
 use Symfony\Component\Yaml\Yaml;
 
 class Config
 {
-    private array $configurationArray;
+    private array $configurationArray; //This variable is used for required configuration from yaml file based on model
 
     /**
      * Load YAML configuration file with using Symfony's Yaml library into array
@@ -22,7 +22,7 @@ class Config
      *
      * Load Model related configuration by model path
      */
-    protected function loadModelConfiguration($modelPath) : array
+    public function loadModelConfiguration($modelPath): array
     {
         return $this->configurationArray[$modelPath];
     }
